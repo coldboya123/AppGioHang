@@ -9,11 +9,15 @@ import com.example.appgiohang23032021.adapter.ProductAdapter;
 import com.example.appgiohang23032021.models.Product;
 import com.example.appgiohang23032021.models.SaleOff;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.List;
 
 public class ProductListActivity extends AppCompatActivity {
 
-    List<Product> mListProduct;
+    public static List<Product> mListProduct;
+    public static NumberFormat mNumberFormat = new DecimalFormat("#,###");
+
     RecyclerView mRcvProduct;
     ProductAdapter mProductAdapter;
     @Override
